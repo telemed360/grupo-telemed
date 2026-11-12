@@ -1,0 +1,90 @@
+/* Tokens do Manual Visual · Grupo Telemed v1.0. Os hex da marca não devem ser alterados. */
+:root {
+  /* Marca */
+  --abismo: #011c26;
+  --profundo: #062836;
+  --petroleo: #26788d;
+  --oceano: #368da3;
+  --ceu: #73c5da;
+  --agua: #83d2e6;
+  --nevoa: #b7e7f3;
+  --gelo: #c2ecf7;
+
+  /* Neutros */
+  --ink: #1e1e1e;
+  --ink-soft: #4a5b61;
+  --muted: #66777d;
+  --line: #e1e9ec;
+  --bg-alt: #f3f8fa;
+  --bg: #ffffff;
+
+  /* Logotipo */
+  --wordmark: #1e1e1e;
+  --wordmark-soft: #717171;
+  --wordmark-neg: #ffffff;
+  --wordmark-neg-soft: #e4ebe9;
+
+  /* Forma */
+  --radius-lg: 28px;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --shadow-sm: 0 8px 24px -12px rgba(1, 28, 38, 0.2);
+  --shadow: 0 20px 50px -20px rgba(1, 28, 38, 0.28);
+
+  /* Tipografia */
+  --font: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* Gradientes do manual */
+  --grad-profundo: linear-gradient(150deg, #011c26, #062836);
+  --grad-oceano: linear-gradient(135deg, #26788d, #368da3 50%, #73c5da);
+  --grad-nevoa: linear-gradient(180deg, #c2ecf7, #b7e7f3);
+
+  /* Sistema do site */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --container: 1280px;
+  --gutter: clamp(20px, 4vw, 56px);
+  --section-y: clamp(88px, 11vw, 156px);
+  --header-h: 68px;
+}
+
+/* Temas de seção: cada <section> escolhe um e todos os componentes leem --c-* */
+.theme-light {
+  --c-bg: var(--bg);
+  --c-fg: var(--ink);
+  --c-soft: var(--ink-soft);
+  --c-muted: var(--muted);
+  --c-line: var(--line);
+  --c-surface: #ffffff;
+  --c-surface-2: var(--bg-alt);
+  --c-accent: var(--petroleo);
+  --c-accent-strong: var(--profundo);
+  --c-chip: #e6f4f8;
+  --c-spot: rgba(54, 141, 163, 0.16);
+}
+.theme-alt {
+  --c-bg: var(--bg-alt);
+  --c-fg: var(--ink);
+  --c-soft: var(--ink-soft);
+  --c-muted: var(--muted);
+  --c-line: var(--line);
+  --c-surface: #ffffff;
+  --c-surface-2: #ffffff;
+  --c-accent: var(--petroleo);
+  --c-accent-strong: var(--profundo);
+  --c-chip: #e6f4f8;
+  --c-spot: rgba(54, 141, 163, 0.16);
+}
+.theme-dark {
+  --c-bg: var(--abismo);
+  --c-fg: #eaf6fa;
+  --c-soft: #b7ccd3;
+  --c-muted: #8fa8b0;
+  --c-line: rgba(194, 236, 247, 0.14);
+  --c-surface: rgba(194, 236, 247, 0.045);
+  --c-surface-2: var(--profundo);
+  --c-accent: var(--agua);
+  --c-accent-strong: var(--gelo);
+  --c-chip: #0b3444;
+  --c-spot: rgba(131, 210, 230, 0.18);
+}

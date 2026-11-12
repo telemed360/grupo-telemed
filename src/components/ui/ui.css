@@ -1,0 +1,199 @@
+/* ---------- Texto por palavra ---------- */
+.split__mask {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  padding: 0.04em 0 0.16em;
+  margin: -0.04em 0 -0.16em;
+}
+.split__word {
+  display: inline-block;
+  will-change: transform;
+}
+
+/* ---------- Botões (manual: pílula, sobe 1px, escurece) ---------- */
+.btn {
+  --btn-bg: var(--profundo);
+  --btn-fg: #fff;
+  --btn-fill: var(--abismo);
+  --btn-bd: transparent;
+  --btn-ic: rgba(255, 255, 255, 0.14);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 14.5px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 9px 9px 9px 22px;
+  border-radius: 999px;
+  border: 1.5px solid var(--btn-bd);
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  white-space: nowrap;
+  transition: transform 0.2s var(--ease), background-color 0.25s, border-color 0.25s;
+}
+.btn:not(:has(.btn__icon)) {
+  padding: 13px 22px;
+}
+/* Hover do manual: sobe 1px e troca para o tom de hover (--btn-fill) */
+.btn:hover,
+.btn:focus-visible {
+  background: var(--btn-fill);
+  transform: translateY(-1px);
+}
+.btn__icon {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--btn-ic);
+}
+.btn--sm {
+  font-size: 13.5px;
+  padding: 7px 7px 7px 18px;
+  gap: 10px;
+}
+.btn--sm .btn__icon {
+  width: 24px;
+  height: 24px;
+}
+.btn--lg {
+  font-size: 16px;
+  padding: 11px 11px 11px 30px;
+  gap: 18px;
+}
+.btn--lg .btn__icon {
+  width: 36px;
+  height: 36px;
+}
+.btn--primary {
+  --btn-bg: var(--profundo);
+  --btn-fill: var(--abismo);
+}
+.btn--secondary {
+  --btn-bg: var(--petroleo);
+  --btn-fill: var(--profundo);
+}
+.btn--light {
+  --btn-bg: var(--gelo);
+  --btn-fg: var(--profundo);
+  --btn-fill: var(--nevoa);
+  --btn-ic: rgba(6, 40, 54, 0.1);
+}
+.btn--ghost {
+  --btn-bg: transparent;
+  --btn-fg: var(--profundo);
+  --btn-bd: var(--agua);
+  --btn-fill: rgba(194, 236, 247, 0.55);
+  --btn-ic: rgba(6, 40, 54, 0.08);
+}
+.btn--ghost:hover {
+  border-color: var(--petroleo);
+}
+.btn--onDark {
+  --btn-bg: var(--agua);
+  --btn-fg: var(--abismo);
+  --btn-fill: var(--gelo);
+  --btn-ic: rgba(1, 28, 38, 0.12);
+}
+.btn--ghostDark {
+  --btn-bg: transparent;
+  --btn-fg: var(--gelo);
+  --btn-bd: rgba(194, 236, 247, 0.45);
+  --btn-fill: rgba(194, 236, 247, 0.14);
+  --btn-ic: rgba(194, 236, 247, 0.14);
+}
+.btn--ghostDark:hover {
+  border-color: var(--gelo);
+}
+
+/* ---------- Marquee ---------- */
+.marquee {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.marquee__track {
+  display: flex;
+  width: max-content;
+  animation: marquee var(--speed, 40s) linear infinite;
+}
+.marquee:hover .marquee__track {
+  animation-play-state: paused;
+}
+.marquee__row {
+  display: flex;
+  align-items: center;
+  flex: none;
+}
+.marquee__row li {
+  display: flex;
+  align-items: center;
+  gap: clamp(28px, 4vw, 56px);
+  padding-right: clamp(28px, 4vw, 56px);
+  white-space: nowrap;
+}
+.marquee__sep {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: currentColor;
+  transform: rotate(45deg);
+  opacity: 0.45;
+  flex: none;
+}
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ---------- Pequenos blocos reutilizáveis ---------- */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: var(--c-chip);
+  color: var(--c-accent-strong);
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+}
+.chip--line {
+  background: transparent;
+  border: 1px solid var(--c-line);
+  color: var(--c-soft);
+}
+.dot-sep {
+  width: 6px;
+  height: 6px;
+  border-radius: 1.5px;
+  background: currentColor;
+  transform: rotate(45deg);
+  opacity: 0.5;
+}
+.card {
+  background: var(--c-surface);
+  border: 1px solid var(--c-line);
+  border-radius: var(--radius-lg);
+  padding: clamp(22px, 2.4vw, 32px);
+}
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 14.5px;
+  color: var(--c-accent-strong);
+}
+.link-arrow .icon-wrap {
+  transition: transform 0.4s var(--ease);
+}
+.link-arrow:hover .icon-wrap {
+  transform: translateX(4px);
+}
