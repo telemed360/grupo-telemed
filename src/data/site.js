@@ -27,7 +27,7 @@ export const SITE = {
 /* PROVISÓRIO: troque pelos canais reais antes de publicar. Campos vazios não aparecem no site. */
 export const CONTACT = {
   email: 'contato@grupotelemed.com.br',
-  phone: '(00) 0000-0000',
+  phone: '0800 590 0590 (WhatsApp)',
   whatsapp: '', // somente dígitos com DDI, ex.: 5511999999999
   address: '',
   hours: 'Atendimento clínico 24/7. Comercial em horário útil.',
