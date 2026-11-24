@@ -3,7 +3,46 @@ import Icon from '../ui/Icon.jsx'
 import Button from '../ui/Button.jsx'
 import PetalArt from '../brand/PetalArt.jsx'
 import { REGULATORY, BRANDS } from '../../data/site.js'
+import { LEADERSHIP } from '../../data/leadership.js'
 import './about.css'
+
+export function Leadership() {
+  return (
+    <section className="section theme-dark" data-nav="dark" id="diretoria">
+      <div className="container">
+        <div className="sec-head">
+          <div>
+            <Reveal as="p" className="eyebrow">
+              Diretoria
+            </Reveal>
+            <Reveal as="h2" className="h-1" delay={0.05}>
+              Quem lidera.
+              <span className="t-soft">Experiência que sustenta o cuidado.</span>
+            </Reveal>
+          </div>
+          <Reveal as="p" className="lead" delay={0.1}>
+            Trajetórias na saúde, na tecnologia, no mercado e na governança, reunidas para levar cuidado digital com
+            ética, escala e proximidade às famílias brasileiras.
+          </Reveal>
+        </div>
+        <Stagger as="ul" className="dirs" gap={0.1}>
+          {LEADERSHIP.map((p) => (
+            <Item as="li" key={p.name} className="dir" data-spot>
+              <figure className="dir__ph">
+                <img src={p.photo} alt={`${p.name}, ${p.role}`} loading="lazy" decoding="async" style={{ objectPosition: p.pos }} />              </figure>
+              <div className="dir__body">
+                <p className="dir__role">{p.role}</p>
+                <h3 className="h-3">{p.name}</h3>
+                <blockquote className="dir__quote">{p.quote}</blockquote>
+                <p className="dir__bio">{p.bio}</p>
+              </div>
+            </Item>
+          ))}
+        </Stagger>
+      </div>
+    </section>
+  )
+}
 
 /* Desenvolvemos · Integramos · Gerenciamos: o verbo do documento de arquitetura vira linha editorial. */
 const VERBS = [
@@ -22,7 +61,6 @@ export function Verbs() {
         <div className="verbs">
           {VERBS.map((v) => (
             <Reveal key={v.n} className="verb" data-spot>
-              <span className="verb__n">{v.n}</span>
               <h3 className="verb__w">{v.w}</h3>
               <p>{v.t}</p>
             </Reveal>
@@ -134,9 +172,8 @@ export function Regulatory() {
           </Reveal>
         </div>
         <Stagger className="reg" gap={0.12}>
-          {REGULATORY.map((r, i) => (
+          {REGULATORY.map((r) => (
             <Item key={r.code} className="reg__card" data-spot>
-              <span className="reg__idx">{String(i + 1).padStart(2, '0')}</span>
               <strong className="reg__num">{r.short}</strong>
               <h3 className="h-3">{r.title}</h3>
               <p>{r.text}</p>

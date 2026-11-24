@@ -9,7 +9,7 @@ import './sections.css'
 const GLOW = ['0% -26%', '26% 0%', '0% 26%', '-26% 0%']
 
 /* O símbolo é o controle: cada pilar do texto acende uma pétala conforme a rolagem. */
-export default function Pillars() {
+export default function Pillars({ numbered = true }) {
   const ref = useRef(null)
   const [active, setActive] = useState(0)
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end end'] })
@@ -43,7 +43,7 @@ export default function Pillars() {
               {PILLARS.map((p, i) => (
                 <li key={p.key} className={i === active ? 'is-active' : ''}>
                   <button type="button" onClick={() => jump(i)} aria-current={i === active} data-cursor="">
-                    <span className="pil__n">{String(i + 1).padStart(2, '0')}</span>
+                    {numbered && <span className="pil__n">{String(i + 1).padStart(2, '0')}</span>}
                     <span className="pil__t">{p.title}</span>
                   </button>
                   <div className="pil__more">

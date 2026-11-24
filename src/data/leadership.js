@@ -1,0 +1,51 @@
+/* Diretoria do Grupo Telemed. Fotos em public/images/diretoria. `pos` ajusta o enquadramento do retrato (object-position). */
+export const LEADERSHIP = [
+  {
+    name: 'Gender Moreira',
+    role: 'Diretor-Presidente Fundador',
+    photo: '/images/diretoria/gender-moreira.jpg',
+    pos: '50% 20%',
+    quote: 'Por que construímos um ecossistema para escalar a saúde digital com outras empresas.',
+    bio: 'Gender Moreira, Diretor-Presidente Fundador do Grupo Telemed Hub Saúde, desenhou o modelo de expansão ética e escalável da healthtech a partir do equilíbrio entre tecnologia, governança médica e rentabilidade. Liderando as frentes de Desenvolvimento de Negócios nos formatos White Label, B2B e B2C, transforma infraestrutura clínica 24/7 em soluções sob medida para parceiros e empresas. Na ponta, sua gestão reflete-se em atendimento ágil, preventivo e humanizado, encurtando distâncias e levando mais qualidade de vida a milhares de famílias brasileiras.',
+  },
+  {
+    name: 'Airton Moraes',
+    role: 'Diretor e Vice-Presidente Comercial',
+    photo: '/images/diretoria/airton-moraes.jpg',
+    pos: '50% 18%',
+    quote: 'Tecnologia de ponta só transforma a saúde quando conquista a confiança de quem cuida.',
+    bio: 'Com mais de 35 anos de carreira comercial e 32 anos na indústria farmacêutica, Airton Moraes, Diretor e Vice-Presidente Comercial do Grupo Telemed Hub Saúde, é o elo que conecta a agilidade da telemedicina à confiança da classe médica. Liderando a inteligência de mercado, a formação de equipes e a visão integrada da jornada do paciente — com destaque para o Programa de Benefícios em Medicamentos (PBM) —, assegura que a tecnologia da healthtech se traduza em cuidado contínuo e resultados sólidos na ponta.',
+  },
+  {
+    name: 'Valter Ricardo Nogueira Machado',
+    role: 'Vice-Presidente de Operações',
+    photo: '/images/diretoria/valter-machado.jpg',
+    pos: '50% 22%',
+    quote: 'Rigor jurídico, governança e excelência sustentam a escalada da saúde digital.',
+    bio: 'Com 33 anos de trajetória na Polícia Federal, formação em Direito e MBA pela FGV, Valter Ricardo Nogueira Machado, Vice-Presidente de Operações do Grupo Telemed Hub Saúde, transforma rigor jurídico e governança em cuidado real e sem burocracia na ponta. Liderando a conformidade regulatória (NR-1), o diálogo estratégico com RHs e corretores e a integração entre Telemedicina 24h e PBM, assegura que cada compromisso da healthtech chegue com agilidade, transparência e dignidade às famílias brasileiras.',
+  },
+  {
+    name: 'Mila Genari',
+    role: 'Diretora de Estratégias & Expansão',
+    photo: '/images/diretoria/mila-genari.jpg',
+    pos: '50% 15%',
+    quote: 'Inovar no cuidado exige visão de futuro, mas escalar exige experiência na estrada.',
+    bio: 'Com 15 anos de trajetória na saúde e na telemedicina, Mila Genari, Diretora de Estratégias & Expansão do Grupo Telemed Hub Saúde, lidera o desenvolvimento de novos negócios e a consolidação de ecossistemas sustentáveis pelo Brasil. Unindo profundo conhecimento dos bastidores do setor à capacidade de execução precisa, estrutura parcerias estratégicas e modelos personalizados com rigor regulatório e previsibilidade — garantindo que a inovação da healthtech se traduza em crescimento sólido e cuidado real na ponta.',
+  },
+  {
+    name: 'Tiago Moreira',
+    role: 'Diretor e Vice-Presidente de Tecnologia & Inovação',
+    photo: '/images/diretoria/tiago-moreira.jpg',
+    pos: '50% 20%',
+    quote: 'Na saúde digital, a melhor tecnologia é aquela que conecta pessoas, processos e cuidado.',
+    bio: 'Com 7 anos dedicados ao setor de telemedicina, Tiago Moreira, Diretor e Vice-Presidente de Tecnologia & Inovação do Grupo Telemed Hub Saúde, lidera uma engenharia voltada a conectar pessoas, processos e cuidado real. Unindo gestão de equipes, segurança de dados e inovação com propósito assistencial, desenvolve fluxos digitais simples e escaláveis que apoiam o corpo clínico, fortalecem parceiros White Label e B2B e garantem acolhimento acessível a quem está do outro lado da tela.',
+  },
+  {
+    name: 'Ricardo Halaouani',
+    role: 'Sócio e Gerente de Expansão',
+    photo: '/images/diretoria/ricardo-halaouani.jpg',
+    pos: '50% 22%',
+    quote: 'Expandir um ecossistema de saúde exige dominar a gestão de ponta a ponta.',
+    bio: 'Com mais de duas décadas de vivência prática à frente de clínicas, redes de franquias e operações nacionais de telessaúde, Ricardo Halaouani, Sócio e Gerente de Expansão do Grupo Telemed Hub Saúde, traz o olhar de quem empreende na ponta para impulsionar parcerias escaláveis pelo Brasil. Liderando o suporte estratégico ao modelo White Label e a saúde financeira dos negócios, capacita grupos empresariais, operadoras e clínicas a levarem cuidado digital com marca própria às suas comunidades.',
+  },
+]

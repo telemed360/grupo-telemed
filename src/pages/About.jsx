@@ -3,7 +3,7 @@ import Statement from '../components/sections/Statement.jsx'
 import Pillars from '../components/sections/Pillars.jsx'
 import InfraBento from '../components/sections/InfraBento.jsx'
 import CtaBand from '../components/sections/CtaBand.jsx'
-import { Brands, Focus, Regulatory, TelemedicineIntro, Verbs } from '../components/sections/AboutSections.jsx'
+import { Brands, Focus, Leadership, Regulatory, TelemedicineIntro, Verbs } from '../components/sections/AboutSections.jsx'
 import { SITE } from '../data/site.js'
 import usePageMeta from '../hooks/usePageMeta.js'
 
@@ -32,8 +32,9 @@ export default function About() {
         aside="Formamos um ecossistema integrado de serviços, tecnologia e gestão em saúde. Atuamos com desenvolvimento de plataformas digitais, serviços de telemedicina, soluções White Label, modelos de franquias e novos negócios, atendendo às necessidades dos mercados público e privado."
         cta={{ to: '/solucoes', label: 'Ver soluções' }}
       />
+      <Leadership />
       <Verbs />
-      <Pillars />
+      <Pillars numbered={false} />
       <Focus />
       <TelemedicineIntro />
       <InfraBento showHead={false} />
