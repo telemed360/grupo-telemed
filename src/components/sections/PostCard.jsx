@@ -16,6 +16,7 @@ export function PostCover({ post, className = '', decorative = true }) {
           height="900"
           loading="lazy"
           decoding="async"
+          style={post.image.pos ? { objectPosition: post.image.pos } : undefined}
         />
       </div>
     )

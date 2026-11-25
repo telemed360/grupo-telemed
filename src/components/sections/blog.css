@@ -271,6 +271,11 @@
   object-fit: cover;
   border-radius: var(--radius-lg);
 }
+.prose__cap {
+  margin-top: 10px;
+  font-size: 13.5px;
+  color: var(--c-muted);
+}
 .article__cover .pcover__art {
   width: auto;
   height: 112%;

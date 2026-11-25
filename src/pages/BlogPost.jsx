@@ -71,7 +71,16 @@ export default function BlogPost() {
               if (b.t === 'img')
                 return (
                   <figure key={i} className="prose__fig">
-                    <img src={b.src} alt={b.alt} width="1200" height="675" loading="lazy" decoding="async" />
+                    <img
+                      src={b.src}
+                      alt={b.alt}
+                      width="1200"
+                      height="675"
+                      loading="lazy"
+                      decoding="async"
+                      style={b.pos ? { objectPosition: b.pos } : undefined}
+                    />
+                    {b.caption && <figcaption className="prose__cap">{b.caption}</figcaption>}
                     <PhotoCredit credit={b.credit} />
                   </figure>
                 )

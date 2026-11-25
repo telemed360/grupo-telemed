@@ -3,9 +3,137 @@ import { PHOTOS } from './photos.js'
 /* Artigos de exemplo. Rascunhos para validação jurídica e clínica antes de publicar.
    Blocos: { t: 'p' | 'h2' | 'quote', c } e { t: 'ul', items }. As fotos vêm de photos.js. */
 
-export const POST_CATEGORIES = ['Regulação', 'Governança de dados', 'Gestão em Saúde', 'Soluções', 'Programas']
+export const POST_CATEGORIES = ['Institucional', 'Regulação', 'Governança de dados', 'Gestão em Saúde', 'Soluções', 'Programas']
 
 const RAW_POSTS = [
+  {
+    slug: 'gender-moreira-expansao-etica-saude-digital',
+    title: 'Gender Moreira e a expansão ética da saúde digital no Brasil',
+    excerpt:
+      'Conheça a visão de Gender Moreira, Diretor-Presidente Fundador do Grupo Telemed Hub Saúde, para expandir a saúde digital com ética, governança e escala.',
+    category: 'Institucional',
+    date: '2026-11-25',
+    cover: { variant: 'rosette', tones: ['abismo', 'profundo', 'petroleo', 'ceu'], rotate: 0 },
+    body: [
+      { t: 'p', c: 'Toda mudança relevante na saúde nasce de uma pergunta prática e humana: como ampliar o cuidado médico onde ele ainda não chega com suficiência, mantendo a sustentabilidade do negócio? Foi a partir desse questionamento que Gender Moreira estruturou a atuação do Grupo Telemed Hub Saúde.' },
+      { t: 'p', c: 'Como Diretor-Presidente Fundador, ele conduz o desenvolvimento de negócios e a expansão nacional da companhia. O foco não é apenas ampliar números, mas construir pontes comerciais éticas, consistentes e adaptáveis às diferentes realidades regionais do Brasil.' },
+      { t: 'h2', c: 'O desafio de escalar com responsabilidade' },
+      { t: 'p', c: 'A saúde digital avançou rapidamente ao aproximar pacientes de orientações médicas e reduzir gargalos de acesso. Porém, crescer nesse setor exige mais do que software ou velocidade de implantação.' },
+      { t: 'p', c: 'É preciso equilibrar inovação tecnológica, conformidade regulatória e confiança assistencial. Sem governança médica clara, respeito às normas do CFM, ANVISA e LGPD e compromisso com o cuidado, qualquer expansão perde consistência.' },
+      { t: 'h2', c: 'Modelos que conectam parceiros e pacientes' },
+      { t: 'img', src: '/images/blog/gender-familia.jpg', alt: 'Mãe sentada no sofá de casa com a filha, usando o celular' },
+      { t: 'p', c: 'A liderança de Gender Moreira articula a visão estratégica da companhia a frentes complementares que atendem tanto a parceiros institucionais quanto à população:' },
+      { t: 'ul', items: [
+        'Ecossistema White Label (Marca Própria): grupos empresariais, operadoras, redes de clínicas e instituições lançam operações de telemedicina com tecnologia, corpo clínico 24/7 e rigor normativo, preservando 100% da própria marca e do vínculo com seus clientes.',
+        'Saúde Corporativa (B2B): soluções voltadas ao bem-estar das equipes como eixo estratégico de produtividade, retenção de talentos e redução do absenteísmo evitável.',
+        'Saúde Cliente (B2C): acesso ágil e preventivo à orientação médica, encurtando distâncias geográficas e integrando o cuidado à rotina das famílias.',
+      ] },
+      { t: 'quote', c: 'Tecnologia, governança médica e rentabilidade precisam caminhar juntas para gerar valor real aos parceiros e ampliar o cuidado às famílias.' },
+      { t: 'h2', c: 'Negócios sustentáveis e impacto social' },
+      { t: 'img', src: '/images/blog/gender-interior.jpg', alt: 'Senhor na varanda de uma casa no interior em teleconsulta pelo celular com uma médica' },
+      { t: 'p', c: 'Em um país de dimensões continentais e realidades tão diversas, aproximar o cuidado qualificado da ponta exige modelos replicáveis e financeiramente saudáveis. Quando um parceiro encontra um caminho seguro para operar, ele ganha condições de atender melhor sua comunidade.' },
+      { t: 'p', c: 'Na prática, esse desenho favorece a prevenção, reduz idas evitáveis a serviços de emergência e alivia a pressão sobre estruturas locais de saúde. O ganho se divide entre empresas que operam com previsibilidade e cidadãos que passam a contar com atendimento mais humano e contínuo.' },
+      { t: 'h2', c: 'Uma liderança voltada ao longo prazo' },
+      { t: 'p', c: 'Sob a presidência de Gender Moreira, o Grupo Telemed Hub Saúde busca consolidar um ecossistema em que viabilidade econômica e interesse público se reforcem mutuamente. Cada parceria é pensada para gerar retorno sustentável sem abrir mão da ética clínica.' },
+      { t: 'p', c: 'Acompanhe os conteúdos do Grupo para aprofundar como a saúde digital pode evoluir com responsabilidade, clareza e impacto concreto na vida das pessoas em todo o país.' },
+    ],
+  },
+  {
+    slug: 'pilares-saude-digital-grupo-telemed',
+    title: 'Pilares da saúde digital: como opera o Grupo Telemed Hub Saúde',
+    excerpt:
+      'Conheça os quatro pilares do Grupo Telemed Hub Saúde: tecnologia, inovação, inteligência de dados anonimizados e governança ética na telemedicina.',
+    category: 'Institucional',
+    date: '2026-11-23',
+    cover: { variant: 'cross', tones: ['abismo', 'profundo', 'petroleo', 'ceu'], rotate: 0 },
+    body: [
+      { t: 'p', c: 'A saúde digital ganha cada vez mais relevância no debate público e corporativo no Brasil. Os avanços tecnológicos permitem ampliar o acesso médico, personalizar o cuidado, otimizar recursos e trazer eficiência operacional para empresas e instituições.' },
+      { t: 'p', c: 'Entretanto, crescer nesse segmento exige equilibrar a velocidade da inovação com rigor clínico e regulatório. O Grupo Telemed Hub Saúde responde a esse desafio reunindo diferentes frentes estratégicas na mesma mesa de decisão para sustentar uma operação ética e escalável.' },
+      { t: 'h2', c: 'Tecnologia e inovação centradas no cuidado' },
+      { t: 'img', src: '/images/blog/pilares-tecnologia.jpg', alt: 'Dois profissionais de tecnologia revisando a interface de uma plataforma de telemedicina no monitor' },
+      { t: 'p', c: 'Escalar atendimentos remotos exige muito mais do que um aplicativo funcional. Na frente de Tecnologia que aproxima, lideranças especializadas desenvolvem e evoluem plataformas próprias e soluções White Label com arquitetura estável e disponibilidade integral, conectando médicos, pacientes e parceiros sem atritos.' },
+      { t: 'p', c: 'Complementando essa base, o pilar de Inovação para o futuro da saúde transforma demandas reais do mercado em portfólio prático. Das operações White Label a programas integrados como o Programa de Benefícios em Medicamentos (PBM), as soluções nascem prontas para operar com previsibilidade e continuidade assistencial.' },
+      { t: 'h2', c: 'Inteligência de dados com rigoroso sigilo' },
+      { t: 'img', src: '/images/blog/pilares-dados.jpg', alt: 'Analista concentrada acompanhando indicadores no computador' },
+      { t: 'p', c: 'Tomar boas decisões na gestão de saúde depende de enxergar o cenário com clareza e responsabilidade. No pilar de Inteligência de Dados, análises estatísticas e gestão por indicadores convertem registros operacionais em insumos estratégicos para o acompanhamento da operação.' },
+      { t: 'p', c: 'Por meio de rigorosa anonimização — respeitando integralmente a privacidade do paciente —, empresas e operadoras conseguem acompanhar índices de sinistralidade, identificar perfis crônicos ou sensíveis e planejar ações preventivas com base em evidências reais.' },
+      { t: 'h2', c: 'Governança, compliance e ética médica' },
+      { t: 'p', c: 'Nenhuma operação digital se sustenta sem segurança jurídica e respeito à prática clínica. Sob o pilar de Governança e Ética Médica, profissionais com vivência em gestão clínica e compliance asseguram que protocolos, prontuários e fluxos cumpram as resoluções do CFM e a LGPD.' },
+      { t: 'p', c: 'Esse cuidado protege o sigilo dos dados sensíveis, garante a autonomia soberana dos médicos na condução de cada consulta e blinda a reputação institucional de empresas, clínicas e operadoras parceiras.' },
+      { t: 'quote', c: 'Escalar atendimentos digitais exige mais do que software: pede confiança com quem contrata e cuidado contínuo com quem é atendido.' },
+      { t: 'h2', c: 'Um ecossistema integrado para o bem comum' },
+      { t: 'p', c: 'No Grupo Telemed Hub Saúde, cada entrega nasce do encontro entre viabilidade tecnológica, leitura precisa de dados, visão de mercado e rigor jurídico. Quando esses quatro pilares caminham juntos, a tecnologia deixa de ser apenas ferramenta e passa a ampliar o acesso digno à saúde pelo país.' },
+      { t: 'p', c: 'Para empresários, gestores, corretores, proprietários de clínicas, operadoras ou associações que buscam solidez e conformidade para atuar na saúde digital, conhecer essa estrutura é o primeiro passo para parcerias duradouras.' },
+    ],
+  },
+  {
+    slug: 'telemedicina-porto-alegre-instituto-caldeira',
+    title: 'Telemedicina chega a Porto Alegre no Instituto Caldeira',
+    excerpt:
+      'Grupo Telemed Hub Saúde inaugura unidade no Instituto Caldeira em Porto Alegre, com Mila Genari à frente da expansão, foco White Label e cuidado 24/7.',
+    category: 'Institucional',
+    date: '2026-11-20',
+    cover: { variant: 'trio', tones: ['profundo', 'petroleo', 'oceano', 'agua'], rotate: 0 },
+    body: [
+      { t: 'p', c: 'Com matriz em Vitória (ES), o Grupo Telemed Hub Saúde amplia sua presença regional ao inaugurar uma nova unidade dentro do Instituto Caldeira, em Porto Alegre. O movimento marca uma etapa relevante de aproximação com o ecossistema de inovação, empreendedorismo e negócios do Sul do país.' },
+      { t: 'p', c: 'A escolha do espaço reflete uma afinidade de propósito. O Instituto Caldeira reúne empresas, startups, universidades e investidores em torno da colaboração e da tecnologia — valores que orientam a atuação do Grupo na transformação da saúde digital com responsabilidade.' },
+      { t: 'h2', c: 'Por que o Instituto Caldeira importa' },
+      { t: 'p', c: 'Expandir a saúde digital exige diálogo constante entre tecnologia, gestão e realidades locais. Em um ambiente aberto à troca entre diferentes setores, torna-se mais natural construir parcerias alinhadas às necessidades práticas de clínicas, operadoras, corretoras e organizações.' },
+      { t: 'p', c: 'Para o Grupo, estar presente no hub gaúcho facilita conversas diretas sobre modelos de atendimento, governança e sustentabilidade, evitando soluções padronizadas que não consideram as particularidades de cada região ou operação.' },
+      { t: 'h2', c: 'O que é apresentado no espaço' },
+      { t: 'img', src: '/images/blog/porto-alegre-apresentacao.jpg', alt: 'Executiva apresentando a plataforma de telemedicina para empresários em uma sala de reunião' },
+      { t: 'p', c: 'Na nova unidade, visitantes e parceiros conhecem de perto como a estrutura do Grupo apoia iniciativas de saúde digital com segurança e organização:' },
+      { t: 'ul', items: [
+        'Solução White Label: estrutura para empresas operarem telemedicina com identidade própria e suporte especializado.',
+        'Atendimento 24/7 e especialidades: disponibilidade contínua com mais de 30 especialidades médicas.',
+        'Apoio à continuidade do cuidado: liberação automática de saldo para ampliar a possibilidade real de seguir o tratamento prescrito.',
+        'Segurança e agilidade: fluxos desenhados para oferecer atendimento confiável, ético e sem burocracia desnecessária.',
+      ] },
+      { t: 'h2', c: 'Presença da liderança e diálogo regional' },
+      { t: 'img', src: '/images/diretoria/mila-genari.jpg', alt: 'Mila Genari, Diretora de Estratégias & Expansão do Grupo Telemed Hub Saúde', pos: '50% 12%', caption: 'Mila Genari, sócia e Diretora de Estratégias & Expansão' },
+      { t: 'p', c: 'A operação na capital gaúcha conta com a presença da sócia e Diretora de Estratégias & Expansão, Mila Genari, disponível para receber empresários, gestores e lideranças que desejam conhecer o modelo de atuação e trocar experiências pessoalmente.' },
+      { t: 'p', c: 'Segundo Mila, estar em Porto Alegre dentro de um ambiente de inovação como o Instituto Caldeira aproxima a equipe de gestores e clínicas que buscam modernizar processos sem abrir mão da própria marca nem da qualidade assistencial.' },
+      { t: 'quote', c: 'Estar em um polo de inovação aproxima a saúde digital de quem busca modernizar operações mantendo a própria identidade e o rigor no cuidado.' },
+      { t: 'p', c: 'A expansão para o Sul também reforça a visão de pluralidade territorial: levar saúde digital bem estruturada a diferentes regiões ajuda a encurtar distâncias, qualificar a jornada do paciente e apoiar iniciativas locais de cuidado contínuo.' },
+      { t: 'h2', c: 'Como conversar com a equipe' },
+      { t: 'p', c: 'Clínicas, operadoras, corretoras, associações e empresas interessadas em conhecer a proposta de saúde digital com marca própria podem visitar o espaço no Instituto Caldeira ou entrar em contato direto com a liderança.' },
+      { t: 'p', c: 'O atendimento pode ser feito pelo e-mail mila@grupotelemed.com.br ou pelo WhatsApp (51) 98573-7430, abrindo espaço para esclarecer dúvidas técnicas, regulatórias e operacionais com transparência.' },
+    ],
+  },
+  {
+    slug: 'telemedicina-white-label-marca-propria',
+    title: 'Telemedicina White Label: como expandir com marca própria',
+    excerpt:
+      'Entenda como o modelo White Label une tecnologia, atendimento 24/7, PBM e governança para levar saúde digital com segurança e impacto social.',
+    category: 'Soluções',
+    date: '2026-11-17',
+    cover: { variant: 'orbit', tones: ['profundo', 'petroleo', 'oceano', 'ceu'], rotate: 0 },
+    body: [
+      { t: 'p', c: 'O mercado brasileiro de saúde digital abre caminhos consistentes para empresas que desejam ampliar sua atuação, diversificar receitas e gerar valor real. Mais do que lançar um novo produto, expandir na saúde exige unir sustentabilidade empresarial, rigor regulatório e compromisso com o cuidado humano.' },
+      { t: 'p', c: 'Nesse cenário, o modelo White Label do Grupo Telemed Hub Saúde permite que empresas operem sua própria telemedicina com identidade visual própria, apoiadas por uma infraestrutura clínica, tecnológica e operacional já estruturada.' },
+      { t: 'h2', c: 'Estrutura completa para operar com segurança' },
+      { t: 'img', src: '/images/blog/white-label-expansao-24h.jpg', alt: 'Médica com fone de ouvido em teleconsulta à noite, atendimento 24 horas' },
+      { t: 'p', c: 'Uma operação digital séria depende de bases sólidas desde o primeiro dia. A estrutura oferecida reúne frentes essenciais para sustentar o crescimento do parceiro sem improvisos:' },
+      { t: 'ul', items: [
+        'Atendimento 24/7 e especialidades: médicos disponíveis dia e noite, com mais de 30 especialidades para acolher diferentes demandas.',
+        'Identidade da sua marca: plataforma personalizada que fortalece o vínculo do parceiro com seus clientes ou beneficiários.',
+        'Governança clínica e suporte: acompanhamento operacional e diretrizes alinhadas às normas do CFM, da ANVISA e da LGPD.',
+        'Indicadores e gestão comercial: acesso a dados anonimizados para gestão, além de estrutura para organização de consultores e comissões.',
+      ] },
+      { t: 'h2', c: 'Integração com PBM e continuidade do cuidado' },
+      { t: 'img', src: '/images/blog/white-label-expansao-pbm.jpg', alt: 'Farmacêutica entregando medicamento a uma paciente com a receita digital no celular' },
+      { t: 'p', c: 'Um atendimento médico ganha ainda mais efetividade quando o paciente consegue dar sequência ao tratamento prescrito. Por isso, a solução pode integrar o Programa de Benefícios em Medicamentos (PBM).' },
+      { t: 'p', c: 'Por meio do aplicativo, o usuário recebe saldo automático para adquirir medicamentos prescritos nas consultas da plataforma, abrangendo genéricos, similares e de marca. A integração conta com rede credenciada em todo o Brasil, incluindo Drogasil, Pague Menos e Panvel.' },
+      { t: 'p', c: 'Ao facilitar o acesso responsável a medicamentos após a orientação médica, a iniciativa reduz barreiras financeiras e ajuda a evitar a interrupção de tratamentos, fortalecendo a adesão clínica e o bem-estar das famílias.' },
+      { t: 'quote', c: 'Expandir em saúde digital exige união entre viabilidade de negócio, rigor ético e cuidado que alcança quem mais precisa na ponta.' },
+      { t: 'h2', c: 'Negócio sustentável e impacto no bem comum' },
+      { t: 'p', c: 'A expansão da saúde digital em um país de dimensões continentais como o Brasil também cumpre um papel social relevante. Quando empresas, clínicas, operadoras, associações e corretores levam atendimento qualificado a novas regiões, encurtam-se distâncias e reduz-se a sobrecarga sobre serviços presenciais.' },
+      { t: 'p', c: 'Empreender nesse segmento pede equilíbrio constante entre viabilidade econômica e responsabilidade pública. Respeitar o sigilo dos dados sensíveis, a autonomia médica e a realidade de cada território transforma a expansão comercial em benefício coletivo.' },
+      { t: 'h2', c: 'Caminhos para empreender com responsabilidade' },
+      { t: 'p', c: 'Se você é empresário, gestor, corretor, dono de clínica, operadora ou associação e avalia expandir na saúde digital, conhecer os fundamentos do modelo White Label ajuda a tomar decisões mais seguras.' },
+      { t: 'p', c: 'Com a combinação de tecnologia, governança, integração a medicamentos e visão de longo prazo, o Grupo Telemed Hub Saúde apoia parceiros que desejam crescer mantendo sua identidade e servindo melhor à sociedade.' },
+    ],
+  },
   {
     slug: 'lei-14510-telessaude',
     title: 'Telessaúde no Brasil: o que a Lei nº 14.510/2022 estabeleceu',
@@ -139,14 +267,15 @@ const RAW_POSTS = [
   },
 ]
 
-/* Junta as fotos: capa em `image` e uma foto dentro do texto, depois do primeiro parágrafo. */
+/* Junta as fotos: capa em `image`. Se photos.js tiver `inline`, ela entra depois do primeiro parágrafo;
+   artigos com várias imagens podem pôr blocos { t: 'img', src, alt } direto no body, onde quiserem. */
 export const POSTS = RAW_POSTS.map((p) => {
   const ph = PHOTOS[p.slug]
   if (!ph) return p
   return {
     ...p,
     image: ph.cover,
-    body: [p.body[0], { t: 'img', ...ph.inline }, ...p.body.slice(1)],
+    body: ph.inline ? [p.body[0], { t: 'img', ...ph.inline }, ...p.body.slice(1)] : p.body,
   }
 })
 

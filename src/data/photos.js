@@ -4,6 +4,32 @@
 const px = (slug, name, id) => ({ name, url: `https://www.pexels.com/photo/${slug}-${id}/` })
 
 export const PHOTOS = {
+  /* Imagens geradas para o artigo (sem crédito de terceiros). As imagens internas ficam no body do post. */
+  'gender-moreira-expansao-etica-saude-digital': {
+    cover: {
+      src: '/images/diretoria/gender-moreira.jpg',
+      alt: 'Gender Moreira, Diretor-Presidente Fundador do Grupo Telemed Hub Saúde',
+      pos: '50% 10%',
+    },
+  },
+  'pilares-saude-digital-grupo-telemed': {
+    cover: {
+      src: '/images/blog/pilares-cover.jpg',
+      alt: 'Vista de cima de uma mesa de reunião com tecnologia, dados, documentos e estetoscópio reunidos',
+    },
+  },
+  'telemedicina-porto-alegre-instituto-caldeira': {
+    cover: {
+      src: '/images/blog/porto-alegre-cover.jpg',
+      alt: 'Profissionais conversando em uma mesa de trabalho em um espaço de inovação com tijolos aparentes',
+    },
+  },
+  'telemedicina-white-label-marca-propria': {
+    cover: {
+      src: '/images/blog/white-label-expansao-cover.jpg',
+      alt: 'Empresária sorrindo enquanto usa o celular em um escritório moderno',
+    },
+  },
   'lei-14510-telessaude': {
     cover: {
       src: '/images/blog/lei-14510-cover.jpg',
