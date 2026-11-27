@@ -5,6 +5,12 @@ const px = (slug, name, id) => ({ name, url: `https://www.pexels.com/photo/${slu
 
 export const PHOTOS = {
   /* Imagens geradas para o artigo (sem crédito de terceiros). As imagens internas ficam no body do post. */
+  'airton-moraes-experiencia-farma-confianca-saude-digital': {
+    cover: {
+      src: '/images/blog/airton-cover.jpg',
+      alt: 'Médica e executivo conversando em um corredor de clínica',
+    },
+  },
   'gender-moreira-expansao-etica-saude-digital': {
     cover: {
       src: '/images/diretoria/gender-moreira.jpg',

@@ -7,6 +7,38 @@ export const POST_CATEGORIES = ['Institucional', 'Regulação', 'Governança de 
 
 const RAW_POSTS = [
   {
+    slug: 'airton-moraes-experiencia-farma-confianca-saude-digital',
+    title: 'Airton Moraes: experiência farma e confiança na saúde digital',
+    excerpt:
+      'Conheça a trajetória de Airton Moraes, VP Comercial do Grupo Telemed Hub Saúde, que une 35 anos de mercado ao cuidado integrado em telemedicina.',
+    category: 'Institucional',
+    date: '2026-11-27',
+    cover: { variant: 'orbit', tones: ['abismo', 'profundo', 'oceano', 'agua'], rotate: 0 },
+    body: [
+      { t: 'p', c: 'No universo das healthtechs, fala-se muito sobre plataformas, algoritmos e escala. Porém, a tecnologia só transforma a saúde de verdade quando conquista a confiança de quem cuida na ponta e garante que o paciente conclua o seu tratamento.' },
+      { t: 'p', c: 'É exatamente nesse ponto de encontro entre inovação e credibilidade assistencial que atua Airton Moraes, Diretor Comercial e Vice-Presidente Comercial do Grupo Telemed Hub Saúde.' },
+      { t: 'h2', c: 'Três décadas de vivência na saúde brasileira' },
+      { t: 'img', src: '/images/diretoria/airton-moraes.jpg', alt: 'Airton Moraes, Diretor e Vice-Presidente Comercial do Grupo Telemed Hub Saúde', pos: '50% 6%', caption: 'Airton Moraes, Diretor e Vice-Presidente Comercial' },
+      { t: 'p', c: 'Com mais de 35 anos de trajetória na área comercial — sendo 32 deles dedicados à indústria farmacêutica —, Airton construiu uma carreira pautada pelo planejamento de mercado, pela formação de equipes e pelo diálogo ético com médicos e instituições no Sudeste brasileiro.' },
+      { t: 'p', c: 'Essa bagagem traz para a saúde digital uma leitura madura sobre como o setor realmente funciona. Em vez de tratar a consulta online como um evento isolado, sua visão conecta a tecnologia à realidade clínica e regulatória do país.' },
+      { t: 'h2', c: 'Os três pilares da liderança comercial' },
+      { t: 'p', c: 'A atuação de Airton Moraes sustenta a expansão previsível e responsável do Grupo a partir de três frentes interdependentes:' },
+      { t: 'ul', items: [
+        'Conexão genuína com a classe médica: décadas de liderança comercial permitem compreender as necessidades reais dos médicos, fortalecendo a rede assistencial, a autonomia clínica e a adesão segura aos protocolos digitais.',
+        'Visão integrada da jornada do paciente: o domínio da cadeia de saúde e medicamentos potencializa soluções como o Programa de Benefícios em Medicamentos (PBM), assegurando continuidade no cuidado após a teleconsulta.',
+        'Inteligência comercial e gestão de demanda: experiência consolidada na estruturação de canais e no desenvolvimento de equipes comerciais de alta performance, gerando crescimento sustentável e previsível para o Grupo e seus parceiros.',
+      ] },
+      { t: 'quote', c: 'Tecnologia de ponta só transforma a saúde quando conquista a confiança de quem cuida e garante continuidade no tratamento do paciente.' },
+      { t: 'h2', c: 'Do diagnóstico ao acesso ao medicamento' },
+      { t: 'img', src: '/images/blog/airton-medicamento.jpg', alt: 'Mulher em casa tomando o medicamento prescrito, com o celular sobre a mesa' },
+      { t: 'p', c: 'Um dos maiores desafios da saúde no Brasil não termina na orientação médica, mas começa na hora em que o paciente precisa iniciar o tratamento prescrito. Quando o acesso ao medicamento esbarra em custos ou burocracia, o cuidado se interrompe.' },
+      { t: 'p', c: 'Ao integrar a telemedicina 24 horas ao Programa de Benefícios em Medicamentos (PBM), o modelo apoiado pela experiência de Airton ajuda empresas, operadoras e famílias a fechar esse ciclo — reduzindo agravamentos evitáveis e promovendo o bem-estar coletivo.' },
+      { t: 'h2', c: 'Solidez para crescer em mercados exigentes' },
+      { t: 'p', c: 'Unir a agilidade da saúde digital à disciplina construída ao longo de mais de três décadas na indústria farmacêutica permite ao Grupo Telemed Hub Saúde dialogar de igual para igual com grandes corporações, operadoras e redes parceiras.' },
+      { t: 'p', c: 'Mais do que abrir novos canais comerciais, essa liderança garante que a expansão aconteça com ética, respeito aos profissionais de saúde e impacto real na vida das pessoas.' },
+    ],
+  },
+  {
     slug: 'gender-moreira-expansao-etica-saude-digital',
     title: 'Gender Moreira e a expansão ética da saúde digital no Brasil',
     excerpt:
